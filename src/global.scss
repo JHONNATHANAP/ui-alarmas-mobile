@@ -1,3 +1,4 @@
+
 /*
  * App Global CSS
  * ----------------------------------------------------------------------------
@@ -24,3 +25,38 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+.layout {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@import "styles";
+.custom-snack {
+  background-color: $color-600;
+  .mdc-snackbar__surface {
+    background-color: $color-600 !important;
+    padding: 40px;
+    color: $color-50 !important;
+
+    text-align: center;
+    border-radius: 20px;
+  }
+  .mat-mdc-snack-bar-label {
+    color: $color-50 !important;
+    font-size: 20px !important;
+  }
+}
+.layout {
+  overflow-y: scroll;
+}

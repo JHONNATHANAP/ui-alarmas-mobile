@@ -1,0 +1,52 @@
+<div class="layout">
+  <!-- <div class="header">
+   
+
+  </div> -->
+  <div style="position: absolute" class="w-100 p-2 pt-3">
+    <app-ripple [radio]="15" routerLink="/mis-alarmas">
+      <div
+        class="d-flex justify-content-center align-items-center"
+        style="
+          width: 32px;
+          height: 32px;
+          border: 1px solid #6485ab;
+          border-radius: 50%;
+          float: right;
+          opacity: 80%;
+        "
+      >
+        <svg-icon name="close"></svg-icon>
+      </div>
+    </app-ripple>
+  </div>
+  <div class="content">
+    <div class="content d-flex flex-column justify-content-center pt-3">
+      <div class="w-100 d-flex flex-column align-items-center">
+        <h1 class="mb-0">Alarma por voz</h1>
+      </div>
+    </div>
+    <div
+      class="mb-2 d-flex flex-column align-items-center p-2"
+      style="margin-top: 25%"
+    >
+      <p class="h3 d-flex" style="text-align: center">
+        Mantén oprimido el botón <br />
+        habla fuerte y claro
+      </p>
+      <app-ripple [radio]="60" (click)="navigate()">
+        <div
+          style="width: 160px; height: 160px; border-radius: 50%"
+          class="background-700 d-flex justify-content-center align-items-center"
+        >
+          <svg-icon name="voice-principal"></svg-icon>
+        </div>
+      </app-ripple>
+      <p class="h4 d-flex" style="text-align: center; opacity: 80%">
+        Ejemplo: <br />
+        Alarma de lunes a viernes <br />a las 7am.
+      </p>
+    </div>
+    <div class="fotter p-2 py-4"></div>
+  </div>
+</div>

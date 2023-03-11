@@ -1,0 +1,61 @@
+<div class="layout"> 
+  <div class="content">
+    <div class="content d-flex flex-column justify-content-center pt-3">
+      <div class="w-100 d-flex flex-column align-items-center">
+        <h1>Mis Alarmas</h1>
+        <h4 class="mt-0 w-50 text-center" style="opacity: 60% !important;" >Próxima alarma <br> 06:00 am</h4>
+      </div>
+    </div>
+    <div class="list p-2">
+      <app-lista-alarmas [alarmas]="alarmas" ></app-lista-alarmas>
+    </div>
+  </div>
+  <div class="fotter">
+    <div class="background-700 p-2 px-3 d-flex row flex-wrap" >
+      <div class=" p-0 col-3 menu-icon" routerLink="/alarma-por-voz" >
+        <app-ripple>
+          <div class=" d-flex flex-column">
+            <svg-icon name="voice"></svg-icon>
+            <span class="h6 m-0 px-2">Alarma <br> por voz</span>
+          </div>       
+        </app-ripple>      
+      </div>
+      <div class=" p-0 col-3 menu-icon" routerLink="/alarma-rapida">
+        <app-ripple class="">
+          <div class=" d-flex flex-column">
+            <svg-icon name="thunder"></svg-icon>
+            <span class="h6 m-0 px-2">Alarma <br>rápida</span>
+          </div>       
+        </app-ripple>      
+      </div>
+      <div class=" p-0 col-3 menu-icon" routerLink="/alarma">
+        <app-ripple class="">
+          <div class=" d-flex flex-column">
+            <svg-icon name="clock"></svg-icon>
+            <span class="h6 m-0 px-2">Nueva <br> Alarma</span>
+          </div>       
+        </app-ripple>      
+      </div>
+      <div class=" p-0 col-3 menu-icon" routerLink="/alarmas-sugeridas">
+        <app-ripple class="">
+          <div class=" d-flex flex-column">
+            <svg-icon name="check"></svg-icon>
+            <span class="h6 m-0 px-2">Alarmas <br> sugeridas</span>
+          </div>       
+        </app-ripple>      
+      </div> 
+    </div>
+  </div>
+</div>
+
+<!-- 
+  <div class="p-2">
+  <app-input></app-input>
+</div>
+  <svg-icon name="add"></svg-icon>
+<svg-icon name="close"></svg-icon> 
+    <div class="background-50 color-600">sdsdsd</div>
+<div class="p-2">
+  <app-button [type]="'submit'"><strong>Guardar</strong></app-button>
+</div>
+-->
